@@ -3,11 +3,12 @@
 
 using namespace std;
 
-bool sum_work(int a, int b) {
+int sum_work(int a, int b) {
 	int sum = 0;
 	for (int i = min(a, b); i < max(a, b); i++) {
 		sum += i;
 	}
+	return sum;
 }
 
 int main() {
